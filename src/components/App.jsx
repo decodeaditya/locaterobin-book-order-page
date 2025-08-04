@@ -90,9 +90,9 @@ function App() {
                 {/* HERO - Premium, Visual, with strong call to action */}
                 <section
                     id="hero"
-                    className="w-full min-h-[80vh] flex items-center justify-center px-2 sm:px-4 lg:px-6 bg-white mb-10 mt-24"
+                    className="w-full flex items-center justify-center px-2 sm:px-4 lg:px-6 bg-white fade-in py-36"
                 >
-                    <div className="w-full max-w-8xl flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6 lg:gap-8">
+                    <div className="container mx-auto px-5 flex flex-col md:flex-row items-center gap-4  sm:gap-6 lg:gap-8 max-w-7xl">
                         {/* Book Image: 50% width, significantly larger */}
                         <div className="w-full md:w-1/2 flex justify-center md:justify-end lg:justify-end mb-4 md:mb-0">
                             <img
@@ -117,19 +117,24 @@ function App() {
                             <h1 className="font-bold text-3xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight mb-2 sm:mb-3 text-[#181818] tracking-tight">
                                 Find Purpose with<br />
                                 <span className="text-[#dbab50]">
-                                   Happiness Happens
+                                    Happiness Happens
                                 </span>
                             </h1>
-                            <blockquote className="border-l-4 border-[#dbab50] pl-4 italic text-gray-600 mb-3 sm:mb-4 text-md sm:text-base lg:text-lg font-normal leading-relaxed mt-2">
+                            <blockquote className="text-lg text-gray-700 mb-3 sm:mb-4 mt-1">
                                 A journey from comfort to purpose. Robin Singh’s book helps you see success—and happiness—in a whole new light.
                             </blockquote>
-                            <button
-                                onClick={() => scrollToSection('buy-now')}
-                                className="inline-block px-10 sm:px-8 py-4 sm:py-3 font-semibold text-[#181818] bg-[#dbab50] hover:bg-[#320101] hover:text-white transition-all duration-300 transform hover:-translate-y-1 mt-4 sm:mt-6 text-md"
-                            >
+                            <a href="https://peepalfarm.org" target="_blank" rel="noopener noreferrer"
+                                className=" bg-gradient-to-r from-[#ffe082] via-[#dbab50] to-[#b89d2a]
+    text-[#320101] font-bold text-lg px-10 py-3 mt-4
+    rounded-lg 
+    hover:from-[#ffe39c] hover:via-[#d0b552] hover:to-[#af8d1f]
+    transition-colors duration-300
+    outline-none focus:ring-4 focus:ring-[#dbab50]/50
+    active:scale-95
+    tracking-wide">
                                 Order Now
-                            </button>
-                            <span className="mt-2 sm:mt-3 text-sm sm:text-sm lg:text-base text-gray-400 font-normal">
+                            </a>
+                            <span className="mt-2 sm:mt-3 text-sm sm:text-sm lg:text-base text-gray-400 font-normal text-center">
                                 Available on  <span className="font-semibold">Amazon</span>
                             </span>
                         </div>
@@ -261,8 +266,8 @@ function App() {
                 <div className="text-md text-neutral-400 mb-2">
                     &copy; {new Date().getFullYear()} Robin Singh. Designed for those who seek more.
                 </div>
-                 <div className="text-md text-neutral-300">
-                    Web by <a href="https://yourwebdesigner.com" target="_blank" rel="noopener noreferrer" className="text-[#dbab50] hover:text-white transition">Aditya Pal</a> 
+                <div className="text-md text-neutral-300">
+                    Web by <a href="https://yourwebdesigner.com" target="_blank" rel="noopener noreferrer" className="text-[#dbab50] hover:text-white transition">Aditya Pal</a>
                 </div>
             </footer>
         </div>
